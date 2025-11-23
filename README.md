@@ -1,112 +1,134 @@
-🚀 Live Demo
-🔗 Frontend:
+# Workasana
 
-https://workasana-iota.vercel.app/
+**Workasana is a full-stack Task, Project, and Team Management application designed to help users track work, visualize progress, and manage productivity.
+Built using React, Bootstrap, Node.js, Express, and MongoDB, it includes dashboards, reports, CRUD operations, authentication, and real-time updates.
 
-🔗 Backend:
+---
 
-https://workasana-backend-three.vercel.app/
+## 🔗 Demo Link
 
-🎥 Demo Video:
+[Live Demo](https://workasana-iota.vercel.app/)
 
-https://drive.google.com/file/d/1mjyNdjfld8DT-zcfYvwMETb_GJgznb0t/view
+---
 
-📌 Features
-✅ Authentication
+## 🚀 Quick Start
 
-Login / Logout
+```bash
+git clone https://github.com/prateek1361/Workasana.git
+cd Workasana
+npm install
+npm run dev 
+``` 
 
-Persistent user session
+---
 
-✅ Dashboard
+## Tech Stack
 
-Shows total tasks
+Frontend:
+- React JS
+- React Router
+- Bootstrap
+- useContext (React)
+- Chart.js
+- Fetch API (no Axios)
+- Toast notifications
 
-Tasks completed
 
-Pending tasks
+Backend:
+- Node.js
+- Express
+- MongoDB
+- Mongoose
 
-Hours remaining
+---
 
-Visual indicators of progress
+## Demo Video
+Watch a walkthrough (7-8 minutes) of all the major features of this app:
+[Google Drive](https://drive.google.com/file/d/1mjyNdjfld8DT-zcfYvwMETb_GJgznb0t/view)
 
-✅ Task Management
 
-Create tasks
+---
 
-View task details
 
-Mark tasks as completed
+## Features
 
-Auto-updates backend
+**Authentication**
+- Login / Logout
+- Persistent user session
 
-Time-to-complete calculation
+**Dashboard**
+- Total tasks
+- Tasks completed
+- Pending tasks
+- Hours remaining
+- Visual progress indicators
 
-Tags, Owners, Teams, Status management
+**Task Management**
+- Add new projects
+- View project-wise tasks
+- Delete projects
+- Cascade delete: deleting a project deletes all tasks inside it
 
-✅ Project Management
+**Project Management**
+- Add/Remove items
+- Move items between cart and wishlist
+- Quantity adjustment
 
-Create new projects
+**Team Management**
+- Add teams
+- Assign tasks to teams
+- Delete teams
 
-View project-wise tasks
+**Reports & Visualizations**
+- Total work done last week (chart)
+- Total remaining work days (chart)
+- Tasks closed by team (chart)
+- Fully responsive charts
 
-Delete projects
+**Settings Page**
+- Logout
+- Delete Projects
+- Delete Tasks
+- Delete Teams
+- Toast notifications for feedback
 
-Cascade delete: deleting a project also deletes its tasks
 
-✅ Team Management
+---
 
-Add teams
 
-Assign tasks to teams
+## API Reference
 
-Delete teams
+**Auth**
+- POST /signup
+- POST /login
+- GET  /me
 
-✅ Reports & Visualizations
+**Projects**
+- GET    /projects
+- POST   /projects
+- DELETE /projects/:id  (auto deletes tasks)
 
-Charts built using Chart.js:
+**Tasks**
+- GET    /tasks
+- POST   /tasks
+- GET    /tasks/:id
+- DELETE /tasks/:id
 
-Total work done last week
+**Teams**
+- GET    /teams
+- POST   /teams
+- GET    /teams/:id
+- PUT    /teams/:id
+- DELETE /teams/:id  (auto deletes tasks owned by team)
 
-Total days of work pending
 
-Tasks closed by team
 
-All charts responsive
 
-✅ Settings Page
 
-Logout
 
-Delete Projects
 
-Delete Tasks
+---
 
-Delete Teams
+## Contact
 
-Toast notifications for feedback
-
-🛠️ Tech Stack
-Frontend
-
-React
-
-React Router
-
-Bootstrap
-
-Chart.js
-
-Fetch API (no Axios)
-
-Toast notifications
-
-Backend
-
-Node.js
-
-Express
-
-MongoDB / Mongoose
-
-REST API architecture
+For any queries or feature request, please reach out to prateek20091234@gmail.com
