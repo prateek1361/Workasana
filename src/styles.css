@@ -1,0 +1,25 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
+  backdrop-filter: blur(5px);
+}
+
+.modal-dialog-centered {
+  margin-top: 0;
+}
+
+.modal-sm-custom {
+  max-width: 400px;
+}
+
+.text-purple {
+  color: #6f42c1 !important;
+}
+
+.bg-light-purple {
+  background-color: #f8f2ff !important; /* soft pastel lavender */
+}
